@@ -1,0 +1,7 @@
+name: example LLM workflow
+steps:
+  - name: example LLM step
+    type: llm
+    inputs:
+      prompt: tell me a story about "Hello, World!"
+      model: gpt-4o

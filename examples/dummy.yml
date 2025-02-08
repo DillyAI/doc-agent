@@ -1,0 +1,7 @@
+
+name: example workflow
+steps:
+  - name: example step
+    type: dummy
+    inputs:
+        input: Hello, World!
