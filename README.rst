@@ -33,17 +33,30 @@
 doc-agent
 =========
 
-
-    Add a short description here!
-
-
-A longer description of your project goes here...
+The doc-agent project is a python package that provides a command line interface to run a workflow defined in a YAML file.
 
 
-.. _pyscaffold-notes:
+Installation
 
-Note
-====
+To install doc-agent, run this command in your terminal from source on GitHub:
 
-This project has been set up using PyScaffold 4.6. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+.. code-block:: bash
+
+    $ pip install https://github.com/DillyAI/doc-agent.git
+
+It will be released on PyPI soon, so you will be able to install it with:
+
+.. code-block:: bash
+
+    $ pip install doc-agent
+
+If you don't have `pip` installed, this `Python installation guide <https://packaging.python.org/tutorials/installing-packages/>`_ can guide you through the process.
+
+Usage
+
+After installing doc-agent, you can use it from the command line. Here are some examples:
+
+.. code-block:: bash
+
+    $ doc-agent --help
+    $ doc-agent --version
