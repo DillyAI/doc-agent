@@ -1,0 +1,20 @@
+on:
+  # on any push to the repository
+  push:
+    branches:
+      - "*"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # run tox to run the tests
+      - name: Run tests
+        run: tox
+      # build the package
+      - name: Build package
+        run: python -m build
+      # run twine to check the package
+      - name: Check package
+        run: twine check dist/*
