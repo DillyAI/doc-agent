@@ -10,7 +10,7 @@ jobs:
     # multiple python versions
     strategy:
       matrix:
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
-        run: pip install tox twine
+        run: pip install tox twine build
       # run tox to run the tests
       - name: Run tests
         run: tox
